@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+  This is a static file not tied to the Vite bundling or hot reloading.
+  You can use a tool like static-server (https://github.com/tinacious/static-server) to serve it
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧊 static test page</title>
+</head>
+
+<body>
+  <h1>🧊 static test page</h1>
+
+  <script type="module">
+    import { addCssStyleSheet } from './dist/add-css-stylesheet.js'
+
+    addCssStyleSheet(`
+      body {
+        font-family: courier, monospace;
+      }
+    `)
+  </script>
+
+  <script type="module">
+    import { css } from './dist/add-css-stylesheet.js'
+
+    css`
+      body {
+        background-color: dodgerblue;
+      }
+    `
+  </script>
+</body>
+
+</html>

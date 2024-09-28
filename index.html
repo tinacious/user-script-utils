@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+  This page is hot reloaded with Vite
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔥 hot reloading</title>
+</head>
+
+<body>
+  <h1>🔥 hot reloading</h1>
+
+  <script type="module">
+    import { addCssStyleSheet } from './dist/add-css-stylesheet.js'
+
+    addCssStyleSheet(`
+      body {
+        font-family: courier, monospace;
+      }
+    `)
+  </script>
+
+  <script type="module">
+    import { css } from './dist/add-css-stylesheet.js'
+
+    css`
+      body {
+        background-color: red;
+      }
+    `
+  </script>
+</body>
+
+</html>
