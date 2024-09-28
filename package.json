@@ -4,18 +4,18 @@
   "version": "0.0.1",
   "type": "module",
   "files": [
-    "dist"
+    "lib"
   ],
-  "main": "./dist/lib.umd.cjs",
-  "module": "./dist/lib.js",
+  "main": "./lib/lib.umd.cjs",
+  "module": "./lib/lib.js",
   "exports": {
     ".": {
-      "import": "./dist/lib.js",
-      "require": "./dist/lib.umd.cjs"
+      "import": "./lib/lib.js",
+      "require": "./lib/lib.umd.cjs"
     },
     "./add-css-stylesheet": {
-      "import": "./dist/add-css-stylesheet.js",
-      "require": "./dist/add-css-stylesheet.cjs"
+      "import": "./lib/add-css-stylesheet.js",
+      "require": "./lib/add-css-stylesheet.cjs"
     }
   },
   "scripts": {

@@ -16,7 +16,11 @@
   <h1>🧊 static test page</h1>
 
   <script type="module">
-    import { addCssStyleSheet } from './dist/add-css-stylesheet.js'
+    // Remote
+    // import { addCssStyleSheet } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.2/lib/lib.js'
+
+    // Local
+    import { addCssStyleSheet } from './lib/add-css-stylesheet.js'
 
     addCssStyleSheet(`
       body {
@@ -26,7 +30,11 @@
   </script>
 
   <script type="module">
-    import { css } from './dist/add-css-stylesheet.js'
+    // Remote
+    // import { css } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.2/lib/lib.js'
+
+    // Local
+    import { css } from './lib/add-css-stylesheet.js'
 
     css`
       body {
