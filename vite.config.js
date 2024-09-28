@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
+    outDir: 'lib',
     lib: {
       entry: {
         lib: resolve(__dirname, 'src/main.ts'),
