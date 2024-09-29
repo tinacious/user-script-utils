@@ -14,24 +14,54 @@
 <body>
   <h1>🔥 hot reloading</h1>
 
+  <!-- Simple example -->
   <script type="module">
-    import { addCssStyleSheet } from './lib/add-css-stylesheet.js'
+    // import { css, addCssStyleSheet } from './src/add-css-stylesheet.ts'
+    import { css, addCssStyleSheet } from './lib/add-css-stylesheet.js'
 
     addCssStyleSheet(`
       body {
         font-family: courier, monospace;
       }
     `)
-  </script>
-
-  <script type="module">
-    import { css } from './lib/add-css-stylesheet.js'
 
     css`
       body {
-        background-color: red;
+        text-align: center;
       }
     `
+  </script>
+
+  <!-- More complex example -->
+  <script type="module">
+    // import { css, addCssStyleSheet } from './src/add-css-stylesheet.ts'
+    import { css, addCssStyleSheet } from './lib/add-css-stylesheet.js'
+
+    const getColour = (reverse) => {
+      const date = new Date()
+      const day = date.getDay()
+      let colours = ['#FF3399', '#33D5FF', '#00D364', '#CC66FF', '#FFCC66', '#00CED1', '#C8C8D5']
+
+      if (reverse) {
+        colours = colours.reverse()
+      }
+
+      return colours[day]
+    }
+
+    // Works with css tag
+    css`
+      body {
+        line-height: 20;
+        background-color: ${getColour()};
+      }
+    `
+    // or addCssStyleSheet function
+    addCssStyleSheet(`
+      body {
+        color: ${getColour(true)};
+      }
+    `)
   </script>
 </body>
 
