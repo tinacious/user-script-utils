@@ -1,25 +1,10 @@
 /**
  * Waits the provided milliseconds for elements to appear or returns null. Supports callbacks and promises.
  *
- * Example callback usage:
- *
- *    waitForElements('.social-media-links__link', 3000, (links) => {
- *      links.forEach((link) => {
- *        console.log('found link', link.innerText)
- *      })
- *    })
- *
- * Example promise usage:
- *
- *    const links = await waitForElements('.social-media-links__link') || []
- *    links.forEach((link) => {
- *      console.log('found link', link.innerText)
- *    })
- *
  * @param selector  Selector to pass to document.querySelector()
  * @param timeout   Max time to wait, in millis
  * @param cb        Callback to execute after the element is found. Argument is the found element
- * @returns         Promise<NodeListOf<Element> | null> | void
+ * @document ./wait-for-elements-example.md
  */
 export const waitForElements = (
   selector: string,

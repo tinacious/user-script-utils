@@ -33,9 +33,11 @@
   "scripts": {
     "dev": "vite --port 29865",
     "build": "tsc && vite build",
+    "typedoc": "npx typedoc",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "typedoc": "^0.26.10",
     "typescript": "^5.5.3",
     "vite": "^5.4.1"
   }

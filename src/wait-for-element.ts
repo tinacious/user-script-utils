@@ -1,21 +1,10 @@
 /**
  * Waits the provided milliseconds for an element to appear or returns null. Supports callbacks and promises.
  *
- * Example callback usage:
- *
- *    waitForElement('.page-layout__title', 3000, (el) => {
- *      alert(`Found it!: ${el.innerText}`)
- *    })
- *
- * Example promise usage:
- *
- *    const el = await waitForElement('.page-layout__title')
- *    alert(`Found it!: ${el.innerText}`)
- *
  * @param selector  Selector to pass to document.querySelector()
  * @param timeout   Max time to wait, in millis
  * @param cb        Callback to execute after the element is found. Argument is the found element
- * @returns         Promise<Element> | void
+ * @document ./wait-for-element-example.md
  */
 export const waitForElement = (
   selector: string,

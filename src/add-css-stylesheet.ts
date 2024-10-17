@@ -1,7 +1,8 @@
 /**
  * Creates a new style element with the provided content and appends it to the document.head element.
- * @param {String} css  Stylesheet contents
- * @returns {HTMLStyleElement}
+ *
+ * @param css  Stylesheet contents
+ * @document ./add-css-stylesheet-example.md
  */
 export function addCssStyleSheet(css: string): HTMLStyleElement {
   const style = document.createElement('style')
@@ -13,7 +14,7 @@ export function addCssStyleSheet(css: string): HTMLStyleElement {
 /**
  * Allows you to pass functions to evaluate values for the CSS.
  * Calls {@link addCssStyleSheet} to embed a style element with the provided stylesheet
- * @param cssCode
+ * @document ./add-css-stylesheet-example.md
  */
 export function css(
   strings: string[],
