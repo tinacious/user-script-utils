@@ -12,8 +12,10 @@ These snippets can be used in user script managers that support ES modules.
 Scripts can be imported like this:
 
 ```js
-import { addCssStyleSheet, delay, waitForElement, waitForElements } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
+import { addCss, delay, waitForElement, waitForElements } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 ```
+
+See [docs](https://tinacious.github.io/user-script-utils/).
 
 
 ## Development
