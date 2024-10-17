@@ -1,5 +1,5 @@
 /**
- * Waits the provided milliseconds for an element to appear or returns null. Supports callbacks and promises.
+ * Waits the provided milliseconds for elements to appear or returns null. Supports callbacks and promises.
  *
  * Example callback usage:
  *
