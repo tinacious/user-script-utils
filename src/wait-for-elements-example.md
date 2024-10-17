@@ -1,7 +1,7 @@
 Example callback usage:
 
 ```js
-import { waitForElements } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.8'
+import { waitForElements } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 
 waitForElements('.social-media-links__link', 3000, (links) => {
   links.forEach((link) => {
@@ -13,7 +13,7 @@ waitForElements('.social-media-links__link', 3000, (links) => {
 Example promise usage:
 
 ```js
-import { waitForElements } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.8'
+import { waitForElements } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 
 perform()
 

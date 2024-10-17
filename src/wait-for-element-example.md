@@ -1,7 +1,7 @@
 Example callback usage:
 
 ```js
-import { waitForElement } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.8'
+import { waitForElement } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 
 waitForElement('.page-layout__title', 3000, (el) => {
   alert(`Found it!: ${el.innerText}`)
@@ -11,7 +11,7 @@ waitForElement('.page-layout__title', 3000, (el) => {
 Example promise usage:
 
 ```js
-import { waitForElement } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.8'
+import { waitForElement } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 
 perform()
 

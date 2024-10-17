@@ -1,35 +1,13 @@
 {
   "name": "user-script-utils",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.1.0",
   "type": "module",
   "files": [
     "lib"
   ],
   "main": "./lib/lib.umd.cjs",
   "module": "./lib/lib.js",
-  "exports": {
-    ".": {
-      "import": "./lib/lib.js",
-      "require": "./lib/lib.umd.cjs"
-    },
-    "./add-css-stylesheet": {
-      "import": "./lib/add-css-stylesheet.js",
-      "require": "./lib/add-css-stylesheet.cjs"
-    },
-    "./delay": {
-      "import": "./lib/delay.js",
-      "require": "./lib/delay.cjs"
-    },
-    "./wait-for-element": {
-      "import": "./lib/wait-for-element.js",
-      "require": "./lib/wait-for-element.cjs"
-    },
-    "./wait-for-elements": {
-      "import": "./lib/wait-for-elements.js",
-      "require": "./lib/wait-for-elements.cjs"
-    }
-  },
   "scripts": {
     "dev": "vite --port 29865",
     "build": "tsc && vite build",

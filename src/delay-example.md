@@ -1,7 +1,7 @@
 Example callback usage:
 
 ```js
-import { delay } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.8'
+import { delay } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 
 delay(3000, () => {
   console.log('3 seconds later!')
@@ -11,7 +11,7 @@ delay(3000, () => {
 Example promise usage:
 
 ```js
-import { delay } from 'https://esm.sh/gh/tinacious/user-script-utils@0.0.8'
+import { delay } from 'https://esm.sh/gh/tinacious/user-script-utils@0.1.0'
 
 perform()
 

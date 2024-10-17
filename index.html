@@ -16,26 +16,20 @@
 
   <!-- Simple example -->
   <script type="module">
-    // import { css, addCssStyleSheet } from './src/add-css-stylesheet.ts'
-    import { css, addCssStyleSheet } from './lib/add-css-stylesheet.js'
+    // import { addCss } from './src/add-css.ts'
+    import { addCss } from './lib/add-css.js'
 
-    addCssStyleSheet(`
+    addCss(`
       body {
         font-family: courier, monospace;
       }
     `)
-
-    css`
-      body {
-        text-align: center;
-      }
-    `
   </script>
 
   <!-- More complex example -->
   <script type="module">
-    // import { css, addCssStyleSheet } from './src/add-css-stylesheet.ts'
-    import { css, addCssStyleSheet } from './lib/add-css-stylesheet.js'
+    // import { addCss } from './src/add-css.ts'
+    import { addCss } from './lib/add-css.js'
 
     const getColour = (reverse) => {
       const date = new Date()
@@ -49,17 +43,10 @@
       return colours[day]
     }
 
-    // Works with css tag
-    css`
-      body {
+    addCss(`
+     body {
         line-height: 20;
         background-color: ${getColour()};
-      }
-    `
-    // or addCssStyleSheet function
-    addCssStyleSheet(`
-      body {
-        color: ${getColour(true)};
       }
     `)
   </script>

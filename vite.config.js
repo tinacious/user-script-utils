@@ -1,17 +1,25 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
+const files = [
+  'add-css',
+  'delay',
+  'wait-for-element',
+  'wait-for-elements',
+]
+
+const entries = files.reduce((acc, current) => {
+  acc[current] = resolve(__dirname, `src/${current}.ts`)
+  return acc
+}, {
+  lib: resolve(__dirname, 'src/main.ts')
+})
+
 export default defineConfig({
   build: {
     outDir: 'lib',
     lib: {
-      entry: {
-        lib: resolve(__dirname, 'src/main.ts'),
-        'add-css-stylesheet': resolve(__dirname, 'src/add-css-stylesheet.ts'),
-        'delay': resolve(__dirname, 'src/delay.ts'),
-        'wait-for-element': resolve(__dirname, 'src/wait-for-element.ts'),
-        'wait-for-elements': resolve(__dirname, 'src/wait-for-elements.ts'),
-      },
+      entry: entries,
     },
   },
 })
