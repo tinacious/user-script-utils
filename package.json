@@ -1,7 +1,7 @@
 {
   "name": "user-script-utils",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "lib"
@@ -16,6 +16,18 @@
     "./add-css-stylesheet": {
       "import": "./lib/add-css-stylesheet.js",
       "require": "./lib/add-css-stylesheet.cjs"
+    },
+    "./delay": {
+      "import": "./lib/delay.js",
+      "require": "./lib/delay.cjs"
+    },
+    "./wait-for-element": {
+      "import": "./lib/wait-for-element.js",
+      "require": "./lib/wait-for-element.cjs"
+    },
+    "./wait-for-elements": {
+      "import": "./lib/wait-for-elements.js",
+      "require": "./lib/wait-for-elements.cjs"
     }
   },
   "scripts": {
